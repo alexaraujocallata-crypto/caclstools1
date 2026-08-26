@@ -1,0 +1,8 @@
+{
+  "name": "CalcTools",
+  "description": "Calculadora técnica y de hardware 6 en 1: Cuello de Botella, Watts/PSU, Compatibilidad de PC, Comparador de Hardware, Analizador de Juegos y Convertidor de Unidades Físicas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

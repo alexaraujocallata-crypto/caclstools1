@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#09090b" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/svg+xml" href="/logo/logo.svg" />
+    <title>CalcTools - Calculadora Técnica y de Hardware</title>
+    <meta name="description" content="Calculadora técnica y de hardware 6 en 1: Cuello de Botella, Watts/PSU, Compatibilidad de PC, Comparador de Hardware, Analizador de Juegos y Convertidor de Unidades Físicas." />
+    <meta property="og:title" content="CalcTools - Calculadora Técnica y de Hardware" />
+    <meta property="og:description" content="Suite técnica y de cálculo de precisión para hardware, consumo energético, compatibilidad y conversiones." />
+    <meta property="og:image" content="/logo/logo.svg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <script>
+      (function() {
+        try {
+          var raw = localStorage.getItem('calctools_settings_v1');
+          var settings = raw ? JSON.parse(raw) : null;
+          var theme = settings ? settings.theme : 'dark';
+          if (theme === 'light') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          }
+        } catch(e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-neutral-950 dark:bg-neutral-950 text-neutral-100 dark:text-neutral-100 overflow-x-hidden min-h-screen">
+    <div id="root" class="w-full overflow-x-hidden"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
+
